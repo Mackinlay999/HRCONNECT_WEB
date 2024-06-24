@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my_setting_container {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none;
+}
+
+.my_profile_box {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  /* background: rgb(235, 252, 255); */
+  padding: 1em;
+  border-radius: 15px 15px 0 0;
+  border-bottom: 1px solid #000;
+}
+
+.__hrImg[alt='profile_img'] {
+  width: 5em;
+  height: 5em;
+  margin: 0px 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.__pfGreet {
+  font-family: serif;
+}
+
+.Setting_opt_container {
+  margin-top: 1em;
+  height: calc(100vh - 247px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.setting_opt_left {
+  width: 28%;
+  height: calc(100vh - 247px);
+  /* overflow-y: scroll; */
+  /* scrollbar-width: thin; */
+  padding: 0 .2em;
+}
+
+.setting_opt {
+  height: 3em;
+  margin: 0.5rem 0 1em;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px 1px rgb(203, 203, 203);
+  font-size: 16px;
+  padding: .7em 1em;
+  text-wrap: wrap;
+}
+
+.setting_opt_active {
+  height: 3em;
+  background-color: black;
+  color: white;
+  margin: 0.5rem 0 1em;
+  border-radius: 5px;
+  border: 1px solid rgb(119, 172, 188);
+  font-size: 16px;
+  padding: .7em 1em;
+}
+
+.setting_opt_active i {
+  padding: 3px 10px;
+  width: 2rem;
+  height: 100%;
+}
+
+.setting_opt:hover {
+  cursor: pointer;
+}
+
+.setting_opt i {
+  color: black;
+  padding: 3px 10px;
+  width: 2rem;
+  height: 100%;
+}
+
+.setting_opt_right {
+  /* border: 1px solid red; */
+  padding: 0 20px;
+  width: 70%;
+  height: calc(100vh - 247px);
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+/*--------------------------different box design----------------*/
+.__defaultText{
+  display: grid;
+  place-items: center;
+  margin: 25vh auto;
+}
+
+/*------------------------profile design container1----------*/
+.Profile_cont1 {
+  border-radius: 5px;
+  /* width: 95%; */
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5em;
+}
+
+.__pfEditBtn,
+.__pfLogoutBtn,
+.__pfDeleteBtn {
+  width: 11em;
+  height: 2.6em;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: 300ms linear;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.__pfEditBtn {
+  background: linear-gradient(90deg, #01378f 0%, #0050D1 100%);
+}
+
+.__pfDeleteBtn {
+  background: hsl(345deg 100% 47%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.__pfLogoutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background: orange;
+}
+
+.__pfEditBtn:hover,
+.__pfLogoutBtn:hover,
+.__pfDeleteBtn:hover {
+  transform: scale(1.03);
+}
+
+.__popupDelete {
+  /* border: 1px solid rgb(125, 125, 125); */
+  border-radius: 10px;
+  height: 15em;
+  width: 32em;
+  background: rgba(255, 255, 255, 0.939);
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.__btnAgree,
+.__btnCancel {
+  margin: 1em 2em;
+  padding: .5em 3em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.__btnAgree {
+  background-color: hsl(122, 100%, 46%);
+}
+
+.__btnCancel {
+  background: hsl(345deg 100% 47%);
+  color: white;
+}
+
+/*-------------------profile design container2-------------*/
+.Profile_cont2 {
+  border: 1px solid black;
+  border-radius: 20px;
+  /* width: 95%; */
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 3px 3px gray;
+}
+
+.Profile_cont2_One {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1vw;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid gray;
+  padding: 6px 10px;
+}
+
+.Profile_cont2_One p {
+  font-size: 20px;
+}
+
+/*---------------------appearance container-----------------*/
+.Appearance {
+  padding: 7px;
+  line-height: 2.2;
+}
+
+/*-------------------------notification------------------*/
+.notification {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.checkboxex {
+  display: flex;
+  justify-content: space-around;
+  gap: 15vw;
+  font-size: 20px;
+}
+
+.checkbox1 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1vw;
+  border: 1px solid rgb(226, 224, 224);
+  padding: 10px;
+}
+
+.click {
+  color: blue;
+}
+
+/* @media only screen and (min-width: 768px) {
+  .setting_opt_active {}
+} */

@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.SidenavBar__Container {
+    background: linear-gradient(90deg, #00296B 0%, #0050D1 100%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+.sidenavBar__AppLOGOBOX {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidenavBar__appLOGO {
+    width: 180px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.JobSeeker_nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-top: 18px;
+    /* margin: .5em 0; */
+}
+
+.JobSeeker_navITEM_LINK {
+    display: block;
+    height: 36px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 95%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.active {
+    display: block;
+    height: 36px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 95%;
+    /* margin-bottom: 10px; */
+    font-size: 16px;
+    font-weight: 400;
+    background: linear-gradient(92.88deg, #0256FA 11.39%, #FF7C03 86.04%);
+    border-radius: 0px 38.8199px 38.8199px 0px;
+}
+/* latest */
+.JobSeeker_navITEM_LINK:hover {
+    background: linear-gradient(92.88deg, #0256FA 11.39%, #FF7C03 86.04%);
+    border-radius: 0px 38.8199px 38.8199px 0px;
+}
+
+.toolTip {
+    height: 100%;
+    margin: 0;
+}
+
+.JobSeeker__navItem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 75%;
+}
+
+.JobSeeker_navITEMICON {
+    font-size: 20px;
+}
+
+.__navFooter {
+    width: 100%;
+}
+
+.sidenavBar__profileBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    position: relative;
+    margin: 10px 0px;
+}
+
+.sidenavBar__userProfilePicture {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.sidenavBar__userName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.logOutButton {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 175px;
+    color: #FA7902;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out
+}
+
+.logOutButtonICON {
+    font-size: 20px;
+}
+
+.logOutButton:hover {
+    cursor: pointer;
+    font-weight: 600;
+    transform: scale(1.1);
+}
+
+.sidenavBar_LOGO {
+    display: none;
+}
+
+.ProfileDropDownContainer {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    background-color: white;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    z-index: 5;
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    top: -100px;
+    left: 105%;
+    display: none;
+}
+
+.dropDownITEM {
+    display: block;
+    margin: 10px auto;
+}
+
+.dropDownITEM_Name {
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.3em;
+
+}
+
+.dropDownITEM_Button {
+    border: none;
+    outline: none;
+    width: 90%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropDownITEM_Button:nth-child(2) {
+    height: 35px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.dropDownITEM_Button:nth-child(3) {
+    border-top: 1px solid rgba(128, 128, 128, 0.377);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #FF7C03;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 1025px) {
+    .SidenavBar__Container {
+        overflow: visible;
+        padding: 0;
+    }
+
+    .JobSeeker_nav {
+        margin-bottom: 5px;
+    }
+
+    .sidenavBar__AppLOGOBOX {
+        height: 60px;
+    }
+
+    .sidenavBar__profileBox {
+        margin: 5px 0px;
+    }
+
+    .sidenavBar_LOGO {
+        display: block;
+    }
+
+    .sidenavBar_DeskLOGO,
+    .sidenavBar__userName,
+    .logOutButton,
+    .navTextHIDE {
+        display: none;
+    }
+
+    .JobSeeker__navItem {
+        justify-content: center;
+    }
+
+    .sidenavBar__profileBox {
+        cursor: pointer;
+    }
+
+    .sidenavBar__profileBox:hover .ProfileDropDownContainer {
+        display: block;
+    }
+}

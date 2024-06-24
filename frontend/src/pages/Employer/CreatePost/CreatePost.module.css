@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Create Post Page------------------------------------------------------------ */
+.__create_Post_Page {
+    position: relative;
+    min-height: 100%;
+}
+
+.__create_Post_Header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.__postDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.__imgContainer {
+    border: 4px dashed rgba(128, 128, 128, 0.503);
+    border-radius: 20px;
+    width: 35%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 3em;
+    overflow: hidden;
+    position: relative;
+}
+
+.__previewImg {
+    border-radius: 10px;
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.__previewImgText {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+}
+
+.__postImg {
+    width: 25%;
+    height: 25%;
+    color: rgba(128, 128, 128, 0.868);
+    object-fit: cover;
+    opacity: 40%;
+}
+
+.__createPost_Form {
+    width: 60%;
+    margin-bottom: 2em;
+}
+
+.__input_Grps {
+    margin: .6em 0;
+}
+
+.__input_Grps label {
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: .2em;
+}
+
+.__input_Grps_labelInfo {
+    font-weight: 500;
+    font-size: 14px;
+    color: #DF0202;
+    margin-left: 10px;
+}
+
+.preAssessment_buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.preAssessment_button {
+    border: none;
+    outline: none;
+    background-color: #FFB800;
+    padding: 0.5em 2em;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.__requiredSkils_List {
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.__requiredSkils_List_ITEM {
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding: 0.2em 1em;
+    gap: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #0050d1 0%, #00296b 100%);
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    word-break: keep-all;
+    min-width: fit-content;
+}
+
+.userSkils_item_DeleteButton {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.userSkils_itemDeleteButton:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.__inputs {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 1em;
+    margin: .2em 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.__createPost_Select {
+    border-radius: 5px;
+    border: none;
+    padding: .3em 1em;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.__buttons {
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.__btn_Cancel,
+.__btn_Save,
+.__btn_Yes,
+.__btn_Cancel,
+.__PostPreviewPage_Buttons {
+    width: 200px;
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    color: #222222;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 24px;
+}
+
+.__btn_Save {
+    background: rgb(30, 30, 255);
+    color: white;
+    border: none;
+}
+
+
+.__btn_Cancel:active,
+.__btn_Save:active {
+    transform: scale(.95);
+}
+
+/* Create Post Details View page------------------------------------------------------------ */
+.__PostPreviewPage_Container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.__PostPreviewPage_heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.__PostPreviewPage_PosterContainer {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 65%;
+    height: 350px;
+    margin: 10px 0px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.__PostPreviewPage_Poster {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.__PostPreviewPage_PosterName_Box {
+    margin: 15px 0px;
+    border-radius: 5px;
+    height: 48px;
+    width: 50%;
+    border: 1px solid #E1DCD9;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 1em;
+}
+
+.__PostPreviewPage__imgUploaded {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.__PostPreviewPage__imgICON {
+    color: #3081D0;
+    font-size: 22px;
+}
+
+.__PostPreviewPage__imgUploadedText {
+    font-weight: 400;
+    font-size: 18px;
+    color: #4C4646;
+}
+
+.__PostPreviewPage_PosterName {
+    color: #3081D0;
+    font-size: 22px;
+}
+
+.__PostPreviewPage_PostDescription_Box {
+    width: 85%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.__PostPreviewPage_Description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    margin: 10px 0px;
+}
+
+.__PostPreviewPage_Description strong {
+    font-size: 20px;
+}
+
+.__PostPreviewPage_Skils {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.__PostPreviewPage_Skils strong {
+    font-size: 19px;
+    font-weight: 500;
+    width: 120px;
+}
+
+.__PostPreviewPage_Skils span {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.__PostPreviewSkilsTag {
+    font-size: 14px !important;
+    font-weight: 400;
+    border: none;
+    padding: 0.2em 1em;
+    gap: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #0050d1 0%, #00296b 100%);
+    color: white !important;
+    text-transform: uppercase;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    word-break: keep-all;
+    min-width: fit-content;
+}
+
+.__PostPreviewPage_ButtonContainer {
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.__PostPreviewPage_Buttons:nth-child(2) {
+    background: rgb(30, 30, 255);
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width: 900px) {
+    .__postDetails {
+        flex-direction: column;
+        margin: 1em 0;
+    }
+
+    .__imgContainer {
+        width: 90%;
+        height: 350px;
+    }
+
+    .__btn_Cancel,
+    .__btn_Save {
+        font-size: 18px;
+    }
+
+    .__createPost_Form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:855px) {
+
+    .__PostPreviewPage_PosterContainer,
+    .__PostPreviewPage_PostDescription_Box {
+        width: 100%;
+    }
+
+    .__PostPreviewPage_PosterName_Box {
+        width: 95%;
+    }
+}

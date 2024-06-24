@@ -1,0 +1,301 @@
+.kumar_one_regular {
+  font-family: "Kumar One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.step_1_banner_heading_login {
+  text-align: center;
+  margin-top: 60px;
+  /* font-family: "roboto"; */
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #00296b 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.sub_container1 {
+  background-color: rgba(0, 80, 209, 1);
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  padding-top: 10vh;
+  padding-bottom: 30px;
+}
+
+.sub_container1_style {
+  background-image: linear-gradient(to right, blue, rgb(0, 0, 133));
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 121px;
+}
+.sub_container2 {
+  border-radius: 20px;
+  width: 60%;
+  height: 79vh;
+  background-color: rgba(255, 255, 255, 1);
+  margin: auto;
+}
+
+.main_whole_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.part_first {
+  background-color: rgba(199, 225, 255, 1);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 50%;
+  height: 79vh;
+}
+
+.login_image {
+  object-fit: cover;
+  height: 35vh;
+  width: 27vw;
+  margin-left: 14px;
+  margin-top: 44px;
+  border-radius: 20px;
+}
+
+.part_second {
+  height: 78vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.sub_container3_imgstyl {
+  height: 49%;
+  width: 49%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.sub_container3_styl1 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+}
+.sub_container3_styl2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sub_container_style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input::placeholder {
+  color: #999;
+  opacity: 0.5;
+}
+
+.input_style {
+  border-radius: 14px !important;
+  font-size: 15px;
+  margin-top: 20px;
+  padding-left: 15px;
+  width: 22vw !important;
+  padding: 11px !important;
+  font-family: roboto;
+}
+
+.forgot_style {
+  margin-top: 30px;
+  color: rgba(37, 119, 212, 1);
+  font-size: 20px;
+  text-align: left;
+  padding-left: 10px;
+}
+.forgot_style1 {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 20px;
+  padding-left: 5px;
+}
+.next_style {
+  font-family: roboto;
+  font-size: 18px;
+  border: none;
+  width: 10vw;
+  border-radius: 12px !important;
+  background-color: white;
+  color: white;
+  background: linear-gradient(90deg, #0050d1 0%, #00296b 100%);
+}
+
+.next_style:hover {
+  background: linear-gradient(90deg, #3377e0 0%, #33558a 100%);
+}
+
+.sub_container5 {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 60%;
+}
+.sub_container6 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.sub_container6_items {
+  margin-left: 20px;
+  font-size: 18px;
+  color: whitesmoke;
+}
+.select_style {
+  border: none;
+  color: white;
+  background-color: rgba(0, 80, 209, 1);
+  font-size: 18px;
+  cursor: pointer;
+}
+.passwordpage_select_style {
+  border-radius: 10px;
+  height: 30px;
+  border-radius: 15px;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.email_form {
+  display: flex;
+  justify-content: center;
+}
+
+.login_social_list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 20vw;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.social_image {
+  height: 40px;
+  width: 40px;
+}
+
+.social_image_google {
+  height: 34px;
+  width: 34px;
+  margin-top: 10px;
+}
+
+.social_image_linkedin {
+  height: 50px;
+  width: 50px;
+}
+
+.pass_main_container {
+  display: flex;
+  justify-content: space-between;
+  height: 78vh;
+}
+
+.sub_container2_pass {
+  border-radius: 20px;
+  width: 60%;
+  height: 78vh;
+  background-color: rgba(255, 255, 255, 1);
+  margin: auto;
+}
+
+.pass_part_1 {
+  background-color: rgba(199, 225, 255, 1);
+  width: 50%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.manage_account {
+  border: 1px solid black;
+  width: fit-content;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 3px;
+  background-color: rgba(199, 225, 255, 1);
+  margin: auto;
+}
+
+.pass_company_logo {
+  margin-top: 50px;
+  height: 100px;
+  width: 150px;
+  margin-left: 20px;
+}
+
+.user_login_detail {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.user_name {
+  font-size: 35px;
+}
+
+.password_input {
+  margin-top: 31px;
+  border-radius: 20px;
+  padding: 11px;
+  border: 1px solid black;
+  width: 23vw;
+  position: relative;
+  left: -58px;
+}
+
+.forgot_pass {
+  font-size: 14px;
+  margin-left: 124px;
+  color: #0050d1;
+}
+
+.login_button {
+  margin-top: 39px;
+  border: none;
+  padding: 5px;
+  width: 175px;
+  border-radius: 12px !important;
+  background-color: white;
+  color: white;
+  background: linear-gradient(90deg, #0050d1 0%, #00296b 100%);
+}
+
+.login_button:hover {
+  background: linear-gradient(90deg, #3377e0 0%, #33558a 100%);
+}

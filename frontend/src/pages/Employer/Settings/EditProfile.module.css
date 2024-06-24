@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+label,
+input,
+select,
+option,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+
+.mainContainer {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    position: relative;
+}
+
+.editProfile__form {
+    width: 75%;
+    min-height: 100vh;
+}
+
+.Form__profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form__userLabel {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.Form__profileBox {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.Form__profile_editICON_Box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.156);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+
+.Form__profile_editICON {
+    color: white;
+    font-size: 22px;
+}
+.Form__profileBox:hover .Form__profile_editICON_Box{
+    display: flex;
+}
+.Form__userProfile {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.Form__inputRows_Primary {
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Form__inputRows_Secondry {
+    margin: 20px 0px;
+    width: 85%;
+}
+
+.Form__inputBox {
+    width: 48%;
+}
+
+
+.Form__inputBox_Label {
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    padding: 0em 0.5em;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.Form__inputBox_Label_Info {
+    font-weight: 500;
+    font-size: 12px;
+    color: #DF0202;
+    margin-left: 5px;
+}
+
+.Form__input {
+    outline: none;
+    border: none;
+    display: block;
+    margin: 5px 0px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.51);
+    padding: 0em 1em;
+}
+
+.Form__input::-webkit-outer-spin-button,
+.Form__input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.Form_About_textArea {
+    resize: none;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 5px 0px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.51);
+    padding: 1em;
+    height: 175px;
+}
+
+.Form__Select_input {
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: black;
+}
+
+.Form_SelectInput_options {
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.Form_WorkEXP_heading {
+    font-size: 22px;
+    font-weight: 600;
+    color: grey;
+}
+
+.Form__buttonContainer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form__saveChangesButton {
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    display: block;
+    width: 220px;
+    padding: 0.8em 1em;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.Form_skilsList {
+    /* border: 2px solid red; */
+    margin: 10px 0px;
+    height: 60px;
+    list-style: none;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.Form_skilsList_Item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2em 1em;
+    width: fit-content;
+    gap: 10px;
+    background: linear-gradient(90deg, #00296B 0%, #0050D1 100%);
+    margin-right: 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.Form_skilsList_Item_DeleteButton {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .editProfile__form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .editProfile__form {
+        width: 100%;
+    }
+}

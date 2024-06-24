@@ -1,0 +1,20 @@
+.webcam_main_container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.webcam_main_container > * {
+  width: 45%;
+  height: 70vh;
+}
+
+.hrquestion_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: azure;
+}
+.hrquestion_block p {
+  color: green;
+}

@@ -1,0 +1,119 @@
+.Employee_main {
+    width: 80vw;
+
+}
+
+.upper_text {
+    margin-left: 2vw;
+    width: 10vw;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.empMain {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+}
+
+.sub_conatiner {
+    height: 72vh;
+    width: 24vw;
+}
+
+.container1 {
+    border: 1px solid rgb(194, 192, 192);
+    border-radius: 8px;
+}
+
+
+.circle {
+    margin-top: 8vh;
+    margin-left: 5vw;
+    height: 26vh;
+    width: 13vw;
+    border: 2px dashed rgb(182, 180, 180);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cir {
+    width: 80%;
+    height: 80%;
+    background-color: rgb(224, 224, 224);
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.circle_img {
+    font-size: 32px;
+    color: gray;
+    margin-top: 6vh;
+}
+
+.cir p {
+    color: gray;
+}
+
+.detail {
+    text-align: center;
+}
+
+.txt {
+    color: gray;
+}
+
+/*----------------------------container2----------------*/
+.container2 {
+    padding-left: 10px;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+.input {
+    color: rgb(209, 208, 208);
+    font-size: 16px;
+    padding: 8px;
+    width: 21vw;
+    line-height: 1.6;
+    border-radius: 10px;
+    border-color: rgb(199, 197, 197);
+    height: 8vh;
+}
+
+.gender {
+    font-size: 18px;
+    padding: 8px;
+    height: 8vh;
+    color: gray;
+    border-radius: 8px;
+    width: 22vw;
+    border-color: rgb(194, 193, 193);
+}
+
+.container3 {
+    padding-left: 10px;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+.button {
+    background-color: rgb(4, 4, 167);
+    color: white;
+    font-size: 18px;
+    padding: 13px;
+    width: 24vw;
+    margin-top: 9vh;
+    margin-left: 1.5vw;
+    border-color: none;
+    border-radius: 8px;
+}

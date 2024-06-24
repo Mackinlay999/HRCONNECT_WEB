@@ -1,0 +1,226 @@
+/* .analyticsPage__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  width: 950px;
+  height: 100vh;
+  overflow: hidden;
+  overflow: auto;
+  scrollbar-width: none;
+  user-select: none;
+} */
+
+.analyticsPage__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 87vh;
+  overflow: hidden;
+  overflow: auto;
+  scrollbar-width: none;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-top: 30px;
+}
+
+.analyticsPage__navbar {
+  border: 1px solid #ccbfbf;
+  border-radius: 15px;
+  /* width: 575px; */
+  width: 60%;
+  margin: 10px auto;
+  /* height: 60px; */
+  height: 50px;
+  position: sticky;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  z-index: 5;
+}
+
+.analyticsPage__navLInks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+  width: 180px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.active {
+  background: linear-gradient(90deg, #00296B 0%, #0050D1 100%);
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  text-decoration: none;
+  width: 180px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.analyticsPage__outletContainer {
+  min-height: calc(100% - 80px);
+}
+
+.AnalyticsPageCarousel_container {
+  margin: 10px 0px;
+  height: 175px;
+}
+
+.AnalyticsPageCarousel_Card {
+  width: 20vw;
+  height: 120px;
+  border-radius: 11.84px;
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.AnalyticsPageCarousel_CardTitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0.5em;
+  gap: 10px;
+  width: 100%;
+  /* font-size: 25px; */
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.AnalyticsPageCarousel_CardICON {
+  width: 28px;
+  height: 28px;
+}
+
+.AnalyticsPageCarousel_CardData {
+  /* font-size: 35px; */
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+  width: 100%;
+  padding-left: 0.4em;
+}
+
+.analyticsPage__analysis__Box {
+  margin-top: 30px;
+  /* margin: 10px auto; */
+  min-height: 440px;
+  position: relative;
+}
+
+.analysisBox__header {
+  margin: 5px auto;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  width: 80%;
+  height: 78px;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.analysisBox__header__primaryText {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.analysisBox__header__secondaryText {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  background: linear-gradient(90deg, #0050d1 0%, #00296b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: capitalize;
+}
+
+/* spline chart */
+
+.spline_chart_design {
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 50px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.frequency_main_parent{
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 100px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.frequency_container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.first_completion_section {
+  width: 40%;
+  background: lightcyan;
+  border: 1px solid lightcyan;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.second_completion_section {
+  width: 40%;
+  background-color: palevioletred;
+  border: 1px solid palevioletred;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.TN{
+  /* background: linear-gradient(-90deg, #00008b, #5252f8); */
+  background:  #5252f8;
+  border-bottom: none;
+  height: 12vh;
+  padding-left: 400px;
+  padding-top: 14px;
+}
+
+.LN{
+  background: linear-gradient(-90deg, #00008b, #5252f8);
+  width: 22vw;
+  position: absolute;
+  top: 0;
+}

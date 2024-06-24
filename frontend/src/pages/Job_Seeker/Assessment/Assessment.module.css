@@ -1,0 +1,1030 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.assessment {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 450px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.assessment .postLoaderContainer {
+    position: absolute;
+}
+
+.__assessment_Header {
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.__assessment_Img {
+    width: 6em;
+    height: 6em;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.assessment_item {
+    border: 1px solid rgb(209, 208, 208);
+    width: 100%;
+    height: 16em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+
+
+.SelfAssessmentPage_Container {
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    width: 1020px;
+    height: 710px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.SelfAssessmentPage_Box {
+    background-color: white;
+    width: 95%;
+    height: 675px;
+    border-radius: 20px;
+    border: 1px solid #A3A3A3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SelfAssessment__Question_OPtionsBox {
+    height: 100%;
+    width: 700px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right: 2px solid #A3A3A3;
+}
+
+.SelfAssessment__questionAnswereBox {
+    position: relative;
+    min-height: 350px;
+}
+
+.SelfAssessment__questionAnswereBox .postLoaderContainer {
+    position: absolute;
+}
+
+.Question_OPtionsBox__Header {
+    border-top-left-radius: 15px;
+    height: 90px;
+    border-bottom: 2px solid #A3A3A3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.SelfAssessment__TimerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    right: 10px;
+    color: black;
+    font-weight: 400;
+}
+
+.SelfAssessment__remainigTimer {
+    background-color: #00B707;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Question_OPtionsBox__Header_Text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.SelfAssessmentPage_Box__secondaryHeading {
+    width: 173px;
+    margin: 10px 0px;
+    margin-left: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    border-bottom: 3px solid #00296B;
+    padding-bottom: 0.3em;
+    text-align: center;
+}
+
+.SelfAssessmentPage__QuestinLIST {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+}
+
+.SelfAssessmentPage__QuestinLIST__QuestionText {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+
+}
+
+.SelfAssessmentPage__QuestinLIST__AnsweresOTPION {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    gap: 20px;
+    background: #EFEFEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    min-height: 50px;
+    margin: 25px 0px;
+    cursor: pointer;
+}
+
+.QuestinLIST__AnsweresNumbering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: #D4D4D4;
+    color: white;
+}
+
+.QuestionList__AnswereText {
+    width: calc(100% - 50px);
+    font-size: 16px;
+
+}
+
+.Options_selected_Answere {
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.Options_selected_Answere .QuestinLIST__AnsweresNumbering {
+    background-color: #FFB800;
+}
+
+.SelfAssessmetPage__buttonBox {
+    margin: 2em auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.selfAssessmentPage__buttons {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 135px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.03), 0px 10px 10px rgba(0, 0, 0, 0.05), 0px 2px 5px rgba(0, 0, 0, 0.06), 0px 0px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 8.55524px;
+    color: white;
+}
+
+.selfAssessment__prevButton {
+    background: #F5F7FB;
+    box-shadow: 0px 83px 33px rgba(0, 0, 0, 0.01), 0px 47px 28px rgba(0, 0, 0, 0.02), 0px 21px 21px rgba(0, 0, 0, 0.03), 0px 5px 11px rgba(0, 0, 0, 0.04), 0px 0px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 8.55524px;
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.SelfAssessment__QuestionNumberingBox {
+    width: calc(100% - 700px);
+    /* width: 270px;     fixed Width for this box if you want the remove the calc() and use it as fixed with */
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.QuestionNumberingBox__NOteBox {
+    height: 200px;
+    width: 100%;
+    border-top-right-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.QuestionNumberingBox__NoteBox_Heading {
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    color: black;
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NoteBox__NoteText {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0em 0.5em;
+    margin: 5px 0px;
+    color: #7A6565;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.NoteBox__ICONBox {
+    width: 20px;
+    height: 20px;
+}
+
+.SelfAssessment__topicName {
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFB800;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+.SelfAssessment__QuestionNumbering {
+    width: 95%;
+    margin: auto;
+    height: 320px;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.QuestinNumbering {
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.AnsweredQuestion__Numbering {
+    background-image: none;
+    background-color: #00B707;
+}
+
+.notViewdQuestion__Numbering {
+    background-color: #A3A3A3;
+}
+
+.MarkedQuestion__numbering {
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+}
+
+.NotAnseredQuestion__numbering {
+    background-color: #DF0202;
+}
+
+
+/* Result page */
+.SelfAssessmentPage__ResultContainer {
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    width: 1020px;
+    height: 710px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.SelfAssessmentPage__resultBox {
+    background-color: white;
+    width: 95%;
+    height: 675px;
+    border-radius: 20px;
+    border: 1px solid #A3A3A3;
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+
+.ResultBox__title {
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 61px;
+    text-align: center;
+    padding: 0.5em;
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.ResultBox__SuccessPoster {
+    width: 420px;
+    height: 275px;
+    background-image: url('../../../Assets/SuccesPage__GIF.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #841FFD;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.ResultBox_SccessText {
+    width: 312px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    padding: 0em 1em;
+}
+
+.ResultBox_QuestionAnswered_text {
+    color: #841FFD;
+    font-weight: 600;
+    margin: 0px 10px;
+}
+
+.ResultBox__doneBUtton {
+    border: none;
+    outline: none;
+    color: white;
+    position: absolute;
+    width: 160px;
+    height: 48px;
+    bottom: 30px;
+    right: 60px;
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.03), 0px 10px 10px rgba(0, 0, 0, 0.05), 0px 2px 5px rgba(0, 0, 0, 0.06), 0px 0px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 8.55524px;
+
+}
+
+
+
+
+/* Instruction- Asssessment page css */
+.AssessmentPage__InstructionContainer {
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    width: 1020px;
+    min-height: 710px;
+    margin: 10px auto;
+    padding-bottom: 0.5em;
+}
+
+.InstructionContainer__Heading_Box {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 1em;
+}
+
+.InstructionContainer__SecondaryHeading_Box {
+    padding: 0;
+    width: 90%;
+    margin: auto;
+}
+
+.PrimaryHeadingbox__headingText {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.InstructionPage_buttonICON {
+    font-size: 40px;
+    color: white;
+    height: 100%;
+    cursor: pointer;
+}
+
+.secondaryHeading__Textbox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.Instruction__Textbox_PrimaryText {
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+}
+
+.Instruction__Textbox_SecondarryText {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.secondaryHeading__Starbox {
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.InstructionContainer__whiteBox {
+    background-color: white;
+    width: 95%;
+    margin: 10px auto;
+    min-height: 545px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.InstructionContainer__InstructionLIST {
+    width: 100%;
+    height: 275px;
+    margin: 10px auto;
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.InstructionContainer__InstructionLIST:nth-child(1)::before {
+    content: "";
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 120px;
+}
+
+.InstructionContainer__InstructionLIST__Title {
+    padding: 0;
+    width: 95%;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 10px auto;
+}
+
+.InstructionLIST_Item {
+    width: 90%;
+    margin: 0px auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    height: 60px;
+}
+
+.InstructionLIST_itemICON_Box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+}
+
+.InstructionLIST_itemICON {
+    font-size: 20px;
+    color: white;
+}
+
+.InstructionLIST_Item_TextBox {
+    height: 100%;
+    width: calc(100% - 80px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.InstructionLIST_Item_TextBox_primary {
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.InstructionLIST_Item_TextBox_secondary {
+    font-size: 18px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.InstructionContainer__Second_InstructionLIST {
+    height: fit-content;
+    padding: 0;
+}
+
+.InstructionContainer__Second_InstructionLIST__Title {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.Second_InstructionList_ITEM {
+    height: 40px;
+
+}
+
+.Second_InstructionLIST_itemICON_Box {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+
+}
+
+.Second_InstructionLIST_Item_TextBox {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 30px);
+    margin: 0;
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.InstructionContainer__whiteBox__buttonContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2em;
+    height: 60px;
+}
+
+.StartQuizButton {
+    border: none;
+    color: white;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    gap: 10px;
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Assessment__popupContainer {
+    background-color: rgba(0, 0, 0, 0.171);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Assessment__popup {
+    border-radius: 10px;
+    width: 520px;
+    height: 320px;
+    background-color: white;
+    position: relative;
+}
+
+.Assessment__popup .postLoaderContainer {
+    position: absolute;
+}
+
+.Assessment__popup_title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+    height: 70px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #00008b;
+    margin: 0;
+    padding: 0;
+}
+
+.Assessment__popup_Secondarytitle {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 400;
+    color: #333333;
+    height: calc(100% - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Assessmentpopup__answeredQuestion {
+    font-weight: 700;
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0px 10px;
+}
+
+.AssessmentPopup_buttonContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.AssessmentPopup__button {
+    color: white;
+    width: 120px;
+    padding: 0.5em;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.AssessmentPopup__button:nth-child(1) {
+    background-color: #DF0202;
+}
+
+.AssessmentPopup__button:nth-child(2) {
+    background-color: #00B707;
+}
+
+
+@media screen and (max-width: 1241px) {
+
+    .InterviwPage__outletContainer {
+        width: 100%;
+        position: relative;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .Interpage_mainContainer__RightBOX {
+        width: 320px;
+        position: absolute;
+        background-color: white;
+        z-index: 10;
+        top: 0;
+        height: 100vh;
+        left: 0;
+        border: 1px solid rgba(128, 128, 128, 0.479);
+    }
+
+    .InterviewProfileContainer__ProfileBox,
+    .InterviewProfileContainer__Experience_Skils_Box {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .InterviewHeader__HamMENU {
+        display: block;
+        cursor: pointer;
+    }
+
+    .Interview__navbar {
+        width: 70%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .Interview_NavITEM {
+        width: fit-content;
+        padding: 0.5em 1em;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .InterviewHeader__MainHamMENU {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hideSidebar {
+        display: none;
+    }
+
+    .InterviewPage__rightContainer {
+        width: 100%;
+    }
+
+    .InterviewPage__sidebarContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .SelfAssessmentPage_Container,
+    .AssessmentPage__InstructionContainer,
+    .SelfAssessmentPage__ResultContainer {
+        width: 95%;
+        padding: 1em 0em;
+        height: fit-content;
+    }
+
+    .SelfAssessmentPage_Box {
+        flex-direction: column-reverse;
+        height: fit-content;
+        min-height: 675px;
+    }
+
+    .SelfAssessment__Question_OPtionsBox {
+        width: 100%;
+
+        border-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+    }
+
+    .SelfAssessment__QuestionNumberingBox {
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 100%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        border-bottom: 1px solid grey;
+    }
+
+    .SelfAssessment__topicName {
+        border-top-left-radius: 20px;
+        height: 90px;
+        width: 120px;
+        font-size: 18px;
+    }
+
+    .QuestionNumberingBox__NOteBox {
+        display: none;
+    }
+
+    .SelfAssessment__QuestionNumbering {
+
+        width: calc(100% - 120px);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0.5em 0em;
+        overflow: hidden;
+        overflow-y: auto;
+        scrollbar-width: 0;
+    }
+
+    .QuestinNumbering {
+        width: 40px;
+        height: 40px;
+    }
+
+    .InstructionContainer__InstructionLIST,
+    .InstructionContainer__Second_InstructionLIST {
+        height: fit-content;
+    }
+
+    .InstructionContainer__Second_InstructionLIST {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Question_OPtionsBox__Header {
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+
+    .Question_OPtionsBox__Header_Text {
+        font-size: 7vw;
+    }
+
+    .SelfAssessmentPage_Box__secondaryHeading {
+        margin-left: 2px;
+    }
+
+    .SelfAssessmentPage__QuestinLIST {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .Assessment__popup {
+        width: 95%;
+    }
+
+    .Assessment__popup_title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .InstructionContainer__InstructionLIST__Title {
+        font-size: 3.5vw;
+    }
+
+    .InstructionContainer__Second_InstructionLIST__Title {
+        font-size: 3vw;
+    }
+
+    .Second_InstructionLIST_Item_TextBox {
+        font-size: 2.2vw;
+    }
+
+    .Interview_instructionBOX {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .InstructionContainer__InstructionLIST__Title {
+        font-size: 4.5vw;
+    }
+
+    .InstructionContainer__Second_InstructionLIST__Title {
+        font-size: 4vw;
+    }
+
+    .Second_InstructionLIST_Item_TextBox {
+        font-size: 2.6vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .InstructionContainer__InstructionLIST__Title {
+        font-size: 5vw;
+    }
+
+    .InstructionContainer__Second_InstructionLIST__Title {
+        font-size: 4.3vw;
+    }
+
+    .Second_InstructionLIST_Item_TextBox {
+        font-size: 3vw;
+    }
+
+    .InstructionLIST_Item_TextBox_primary {
+        font-size: 4.2vw;
+    }
+
+    .InstructionLIST_Item_TextBox_secondary {
+        font-size: 4vw;
+    }
+
+    .ResultBox__SuccessPoster,
+    .ResultBox_SccessText {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    .InstructionContainer__InstructionLIST__Title {
+        font-size: 22px;
+    }
+
+    .InstructionContainer__Second_InstructionLIST__Title {
+        font-size: 20px;
+    }
+
+    .Second_InstructionLIST_Item_TextBox {
+        font-size: 3.6vw;
+    }
+
+    .InstructionLIST_Item_TextBox_primary {
+        font-size: 4.6vw;
+    }
+
+    .InstructionLIST_Item_TextBox_secondary {
+        font-size: 4.2vw;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .Second_InstructionLIST_Item_TextBox {
+        font-size: 3.6vw;
+    }
+
+    .InstructionLIST_Item_TextBox_primary {
+        font-size: 6vw;
+    }
+
+    .InstructionLIST_Item_TextBox_secondary {
+        font-size: 4.4vw;
+    }
+
+    .Second_InstructionLIST_Item_TextBox {
+        font-size: 3.8vw;
+    }
+
+}

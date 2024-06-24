@@ -1,0 +1,145 @@
+/* PreAssesment Css */
+
+.pre_asssesment_container {
+    width: 73vw;
+    margin: 10px auto;
+  }
+  
+  .rounds_heading {
+    font-size: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: fit-content;
+  }
+  
+  .question_container {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .question_number {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .question {
+    padding-bottom: 15px;
+    line-height: 18px;
+  }
+  
+  .add_btn_container {
+    margin-top: 5px;
+    float: right;
+  }
+  
+  .add_btn {
+    height: 25px;
+    font-size: 13px;
+    padding-top: 3px;
+    background-color: rgba(21, 84, 246, 1);
+  }
+  
+  .aptitude_round_container {
+    margin-top: 20px;
+  }
+  
+  .aptitude_heading_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .aptitude_round_flex_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .aptitude_round_question_option_heading {
+    border: 1px solid black;
+    padding: 5px;
+    width: fit-content;
+  }
+  
+  .aptitude_round_question_container_first_question {
+    border: 1px solid rgb(234, 100, 51);
+    border-right-width: 10px;
+    margin-top: 10px;
+    height: 28vh;
+    width: 50vw;
+  }
+  
+  .aptitude_round_question_container {
+    border: 1px solid rgb(234, 100, 51);
+    border-right-width: 10px;
+    margin-top: 25px;
+    height: 28vh;
+    width: 52vw;
+  }
+  
+  .aptitude_round_question_number {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  
+  .aptitude_round_question {
+    padding-bottom: 60px;
+    padding-left: 20px;
+  }
+  
+  .aptitude_round_option_container_first_option {
+    border: 1px solid green;
+    width: 20vw;
+    line-height: 7vh;
+    margin-top: 10px;
+    height: 28vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    font-size: 12px;
+  }
+  
+  .aptitude_round_option_container {
+    font-size: 12px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+  
+  .aptitude_round_edit_del_btn_container {
+    margin-top: 10px;
+  }
+  
+  .aptitude_round_del_btn {
+    margin-left: 10px;
+  }
+  
+  .form_action_btn_container {
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+    margin: 10px auto;
+    margin-top: 100px;
+  }
+  
+  .cancel_btn {
+    width: 10vw;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    color: gray;
+  }
+  
+  .cancel_btn:hover {
+    background-color: #ffff;
+    color: black;
+  }
+  
+  .submit_btn {
+    background-image: linear-gradient(rgba(0, 80, 209, 1), rgba(0, 41, 107, 1));
+    width: 10vw;
+  }

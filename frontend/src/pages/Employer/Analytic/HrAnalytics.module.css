@@ -1,0 +1,76 @@
+.hr_analytic_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 87vh;
+    overflow: hidden;
+    overflow: auto;
+    scrollbar-width: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* margin-left: 100px; */
+    margin-top: 30px;
+  }
+  
+  .AnalyticsPageCarousel_Card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    height: 20vh;
+    transition: all 0.3s ease;
+  }
+  
+  .AnalyticsPageCarousel_Card:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .AnalyticsPageCarousel_CardTitle{
+    color: grey; 
+    font-size: 16px;
+  }
+  
+  .AnalyticsPageCarousel_CardICON{
+    height: 35px;
+  }
+  
+  
+  .spline_chart_container{
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    font-weight: 700;
+    font-size: larger;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .pie_chart_container{
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin-top: 40px; 
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .hr_bar_container{
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin-top: 40px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }

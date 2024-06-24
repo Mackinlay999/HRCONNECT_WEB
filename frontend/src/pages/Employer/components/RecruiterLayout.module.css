@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.__mainContainer {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.__subContainer {
+    width: calc(100vw - 250px);
+    height: 100vh;
+    position: relative;
+}
+
+.__outletContainer {
+    height: calc(100vh - 70px);
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding: 1.5em;
+}
+
+/* Navbar Design-------------------------> */
+.__navbar_Page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(90deg, #00296B 0%, #0050D1 100%);
+    width: 250px;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.__nav_Logo {
+    color: white;
+    padding: .5em;
+    text-align: center;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.__navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.__navbar_Links,
+.active {
+    /* border: 1px solid red; */
+    text-decoration: none;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    padding: .5em 1em .4em 2em;
+    margin: .1em 0;
+    width: 95%;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.active {
+    background: linear-gradient(92.88deg, #0256FA 11.39%, #FF7C03 86.04%);
+}
+
+.__navbar_Links:hover {
+    background-image: linear-gradient(to right, rgba(2, 85, 250, 0.835), rgba(255, 125, 3, 0.83));
+}
+
+.__nav_footer_actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.__user_Info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 1em;
+}
+
+.__user_Img {
+    width: 3.3em;
+    height: 3.3em;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 0 .5em;
+}
+
+.__btn_Edit_Profile {
+    font-size: 10px;
+    padding: .5em 2em;
+    margin: .5em 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.__btn_Logout {
+    background: transparent;
+    border-radius: 6px;
+    border: none;
+    color: orange;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    height: 35px;
+    width: 8em;
+    margin: .5em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+.__btn_Logout:hover {
+    background-color: #3855fc;
+}
+
+.__btn_Logout:active {
+    transform: scale(.95);
+}
+
+/* TopBar Design ---------------------- */
+.__topbar {
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3vw;
+    align-items: center;
+    padding-right: 2em;
+    position: relative;
+}
+
+.__searchbar {
+    background: white;
+    border-radius: 5px;
+    width: 45%;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.__input {
+    width: 80%;
+    height: 2.5em;
+    border: none;
+    outline: none;
+}
+
+.__topbar_Icon,
+.__btn_filter,
+.__btn_notfication {
+    cursor: pointer;
+}
+
+.__btn_Add_Employee {
+    padding: .4em 1em;
+    border-radius: 25px;
+    color: white;
+    background: orange;
+}
+
+
+.searchItemContainer {
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: white;
+    width: 50%;
+    max-height: 500px;
+    position: absolute;
+    z-index: 2;
+    top: 10em;
+    left: 50%;
+    overflow: scroll;
+    transform: translate(-60%, -45%);
+}
+
+.SearchList__Item {
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 2em;
+}
+
+@media screen and (max-width: 950px) {
+    .__navbar_Page {
+        width: 100px;
+    }
+
+    .__navbar {
+        gap: .1em;
+    }
+
+    .__navbar_Links,
+    .active {
+        margin: .1em 0;
+        padding-left: 2.5em;
+    }
+
+    .__user_Info span {
+        display: none;
+    }
+
+    .__user_Img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .__btn_Logout {
+        width: 3em;
+        height: 30px;
+        font-size: 22px;
+    }
+
+    .__topbar {
+        gap: 20px;
+        padding-right: 30px;
+    }
+
+    .__btn_Add_Employee {
+        font-size: 12px;
+    }
+
+    .__hide,
+    .__userSection,
+    .__logout_Text {
+        display: none;
+    }
+
+    .__subContainer {
+        width: calc(100vw - 100px);
+        height: 100vh;
+    }
+
+    .__posts {
+        width: 90%;
+    }
+}

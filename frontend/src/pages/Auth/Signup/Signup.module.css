@@ -1,0 +1,316 @@
+.signup_container {
+  display: flex;
+  background-color: rgba(0, 80, 209, 1);
+  height: 100vh;
+}
+
+.kumar_one_regular {
+  font-family: "Kumar One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.step_container {
+  border-radius: 20px;
+  width: 60%;
+  height: 80vh;
+  margin: auto;
+  background-color: white;
+}
+
+.step_flex_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step_1_part_1 {
+  background-color: rgba(199, 225, 255, 1);
+  width: 50%;
+  height: 80vh;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.step_1_banner_heading_signup {
+  text-align: center;
+  margin-top: 60px;
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: contain;
+  color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.upload_resume_heading{
+  text-align: center;
+  font-family: "Oswald";
+}
+
+.resume_handler{
+  margin-left: 0.5vw;
+  width: 21vw;
+}
+
+.create_account_name_container {
+  text-align: center;
+  margin-top: 60px;
+
+}
+
+.forgot_style1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  font-size: 20px;
+}
+
+.step_1_part_2 {
+  width: 50%;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step_button_container {
+  display: flex;
+  justify-content: center;
+}
+
+.step_button {
+  font-family: roboto;
+  margin-top: 8vh;
+  border: none;
+  padding: 8px;
+  width: 15vw;
+  border-radius: 12px !important;
+  background-color: white;
+  color: white;
+  background: linear-gradient(90deg, #0050d1 0%, #00296b 100%);
+  margin-left: -2rem;
+}
+
+.step_button:hover{
+  background: linear-gradient(90deg, #3377e0 0%, #33558a 100%);
+}
+
+.step_2_part_2 {
+  margin-top: 50px;
+  width: 45%;
+}
+
+.personal_input_field {
+  border-radius: 12px !important;
+  margin-bottom: 15px;
+  width: 22vw !important;
+  font-family: roboto;
+}
+
+.password_container {
+  display: flex;
+}
+
+.eye_icon {
+  margin-left: -30px;
+  margin-top: 10px;
+}
+
+.terms_container {
+  display: flex;
+  font-size: 12px;
+}
+
+.check_box {
+  margin-right: 5px;
+}
+
+.form-control {
+  margin-bottom: 10px !important;
+  width: 22vw !important;
+  border-radius: 20px !important;
+  cursor: pointer;
+}
+
+/* PhoneInput.module.css */
+.customPhoneInput {
+  width: 22vw !important;
+  margin-bottom: 10px;
+}
+
+.customPhoneInputInput {
+  width: 22vw !important;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 14px !important;
+  font-size: 16px;
+}
+
+.react_date_form_control{
+  width: 22vw !important;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding-top: 5px; padding-bottom: 5px;
+  padding-left: 10px;
+  border-radius: 14px;
+}
+
+.step_4_part_2 {
+    margin-top: 50px;
+    width: 45%;
+}
+
+.education_detail_start_date {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding-bottom: 5px;
+  text-align: center;
+  width: 5vw;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.date_buttons {
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 12px;
+  padding: 5px;
+  width: 7vw;
+}
+
+.education_date_container {
+  display: flex;
+  justify-content: space-between;
+  width: 22vw;
+}
+
+.date_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_social_list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 20vw;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.social_image {
+  height: 40px;
+  width: 40px;
+}
+
+
+.social_image_google {
+  height: 34px;
+  width: 34px;
+  margin-top: 10px;
+}
+
+
+.social_image_linkedin {
+  height: 50px;
+  width: 50px;
+}
+
+
+
+/* HR SIGN UP CSS */
+/* Container for the form */
+.hr_signup_container {
+  min-height: 100vh;
+}
+
+/* Form wrapper */
+.hr_signup_form {
+  width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Logo */
+.hr_logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hr_logo img {
+  width: 150px;
+}
+
+/* Form title */
+.hr_form_title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form fields */
+.hr_form_input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Form submit button */
+.hr_form_submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hr_form_submit:hover {
+  background-color: #0056b3;
+}
+
+.hr_form_input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.hr_input_field {
+  width: 100% !important;
+  border-radius: 5px !important;
+}
+
+.request_otp_button {
+  margin-top: -10px;
+  width: 40%;
+  height: 5vh;
+  border-radius: 8px;
+  font-size: 11px;
+  padding-top: 6px;
+  margin-bottom: 5px;
+  color: white;
+  background: linear-gradient(90deg, #0050d1 0%, #00296b 100%);
+}
+
+/* Hover effect */
+.request_otp_button:hover {
+  opacity: 0.9;
+}

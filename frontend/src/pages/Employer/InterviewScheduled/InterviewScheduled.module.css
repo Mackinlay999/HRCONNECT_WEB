@@ -1,0 +1,106 @@
+/* Interviews CSS */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.cardcontainer{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  height: 20vh;
+  /* background-color: #95ecba; */
+}
+.cardcontainer1{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  height: 15vh;
+  width: 25vw;
+  gap: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.cardcontainer1:hover{
+  transition: 300ms linear;
+  box-shadow: grey 1px 1px 9px;
+  cursor: pointer;
+}
+.childbox1,.childbox2, .childbox3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #95daf3;
+}
+.childbox2{
+  background-color: rgb(246, 163, 163);
+}
+.childbox3{
+  background-color: rgb(78, 230, 78);
+}
+.childboximg{
+ height: 30px;
+}
+.childbox1text{
+  color: #34bdef;
+}
+.childbox2text{
+  color: #f25959;
+}
+.childbox3text{
+  color: #2eeb3b;
+}
+.table_container {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid black; /* Border around the entire table */
+}
+
+.table_wrapper {
+  overflow-x: auto;
+}
+
+.custom_table {
+  font-size: 14px;
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+
+.custom_table th,
+.custom_table td {
+  border: 1px solid black;
+}
+
+.custom_table thead th {
+  color: #212529;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.custom_table tbody td {
+  border: none;
+  border-bottom: 1px solid black;
+  
+}
+
+
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.gold_star {
+  color: gold;
+}

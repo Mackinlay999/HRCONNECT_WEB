@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Playfair Display";
+}
+/* global.css */
+body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .dark-mode {
+    background-color: #3b4252;
+    color: #FFFFFF;
+  }
+/*   
+  .light-mode {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+   */
+  /* Target specific elements within dark-mode */
+  .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
+  .dark-mode p, .dark-mode span, .dark-mode a, .dark-mode div {
+    color: #FFFFFF !important; 
+  }
+.dark-mode .exclude-dark-mode {
+  color: black !important; 
+}
+/* These block of code may be temp block so do not touch that even i don't know where this blocks of code will apply */
+.Work_from_Office {
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    background-color: #E6EFFC;
+    color: #0043FF;
+}
+
+.Absent {
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    background-color: #FFE5EE;
+    color: #AA0000;
+
+}
+
+.Late_Arrival {
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    background-color: #FFF8E7;
+    color: #D5B500;
+
+}
+
+.Work_from_Home {
+    display: block;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    background-color: #EFEFEF;
+    color: #000000;
+}
+
+
+.Work_from_OfficeText {
+    color: #0043FF;
+}
+
+.AbsentText {
+    color: #AA0000;
+}
+
+.Late_ArrivalText {
+    color: #D5B500;
+}
+
+.Work_from_HomeText {
+    color: #000000;
+}

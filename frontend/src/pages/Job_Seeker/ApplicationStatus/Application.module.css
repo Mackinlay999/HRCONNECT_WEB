@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+label,
+input,
+select,
+option,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+.ApplicationStatus__mainContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ApplicationStatus__navBar {
+    border: 1px solid rgba(103, 103, 103, 1);
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    border-radius: 50px;
+    padding: 0em 0.5em;
+}
+
+.ApplicationStatus__navBar_Item {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: black;
+    text-transform: capitalize;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 5px 0px;
+    width: 225px;
+}
+
+.active {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 225px;
+    text-transform: capitalize;
+    font-size: 18px;
+    background: linear-gradient(90deg, #0050d1 0%, #00296b 100%);
+    border-radius: 20px;
+    color: white;
+    padding: 5px 0px;
+}
+
+.ApplicationStatus__navBar_Item_ICON_Box {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+    background-color: rgba(0, 181, 105, 1);
+    color: white;
+    padding: 0.1em;
+}
+
+.ApplicationStatus__navBar_Item_ICON_SecondaryBox {
+    border-radius: 50%;
+    padding: 0.1em;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(180deg,
+            #ff624a -0.43%,
+            #ff5940 24.39%,
+            #fd4224 67.09%,
+            #fc2c0a 100.05%);
+}
+
+.__outletContainer {
+    height: calc(100% - 60px);
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding: 1em 0.2em;
+    position: relative;
+}
+
+.JobStatus_Card_BOX {
+    border: 1px solid rgb(219, 218, 218);
+    box-shadow: 0px 2px 3px rgb(184, 183, 183);
+    width: 80%;
+    height: 175px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.JobStatus_Card_BOX_TOP {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 0.5em;
+}
+
+.CardBox_jobProfileBox {
+    border-top-left-radius: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardBox_jobPoster {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.504);
+    overflow: hidden;
+}
+
+.CardBox_JObTitle {
+    font-size: 1.1vw;
+    color: rgba(161, 161, 161, 1);
+    font-weight: 500;
+    margin: 0px 15px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.CardBox_Title {
+    font-size: 1.1vw;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+    display: block;
+}
+
+.CardBox_jobSalaryRange {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+.CardBox_jobSalaryRangeICON {
+    font-size: 25px;
+}
+
+.CardBox_job_ButtonContainer {
+    width: 220px;
+    height: 100%;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.CardBox_job_Buttons {
+    border: none;
+    border-radius: 10px;
+    width: 175px;
+    padding: 0.4em 1em;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.CardBox_job_FeedbackButton {
+    background-color: transparent;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.CardBox_job_Buttons_InProgress {
+    background: #a3a3a3;
+}
+
+.CardBox_job_Buttons_shortListed {
+    background: rgba(0, 183, 7, 1);
+}
+
+.CardBox_job_Buttons_NOTshortListed {
+    background: rgba(223, 2, 2, 1);
+}
+
+.JobStatus_Card_BOX_BOTTOM {
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: calc(100% - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 0.8em;
+}
+
+.CardBox__InfoBox {
+    font-weight: 600;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-transform: capitalize;
+}
+
+.CardBox__jobInfoICON {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.NoDataMsg {
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+    color: #ff5940;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.SearchJobsButton {
+    text-transform: initial;
+    font-weight: 500;
+    display: block;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 220px;
+    padding: 0.4em 1em;
+    background: linear-gradient(90deg, #0050d1 0%, #00296b 100%);
+    border-radius: 20px;
+    color: white;
+    margin: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Poup Container */
+.Status__poupMainContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.274);
+    z-index: 3;
+    overflow: hidden;
+}
+
+.Status__poupBox {
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 575px;
+    min-height: 645px;
+    background-color: white;
+    animation: slideInFromBottom 0.6s ease-in-out;
+    transition: all 0.6s ease-in;
+}
+
+.Status__poupBox_Heading {
+    border-radius: 40px 40px 0px 0px;
+    padding: 0.5em 0em;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+@keyframes slideInFromBottom {
+    from {
+        top: 200%;
+    }
+
+    to {
+        top: 50%;
+    }
+}
+
+.Status__poupBox_PosterBox {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 5px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Status__poupBox_InProgress_PosterBox {
+    background: linear-gradient(90deg, #0050d1 0%, #00296b 100%);
+}
+
+.Status__poupBox_Shortlisted_PosterBox {
+    background-color: rgba(0, 183, 7, 1);
+}
+
+.Status__poupBox_Not_Shortlisted_PosterBox {
+    background-color: rgba(255, 54, 54, 1);
+}
+
+.Status__poupBox_Poster {
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.Status__poupBox_SecondaryPoster {
+    width: 50%;
+    height: 50%;
+}
+
+.Status__poupBox_SecondaryHeading {
+    font-weight: 600;
+    font-size: 18px;
+    color: #171a1f;
+    text-align: center;
+    margin: 10px auto;
+    width: 95%;
+}
+
+.Status__poupBox_TertiaryHeading {
+    margin: 0px auto;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #a3a3a3;
+    width: 95%;
+}
+
+.Status__poupBox_StatusTimeLineList {
+    counter-reset: step;
+    margin: 10px auto 5px auto;
+    width: 90%;
+}
+
+.Status__poupBox_date {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-left: 3em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #585858;
+}
+
+.Status_popupbuttons {
+    display: block;
+    margin: 0px auto 8px auto;
+    width: 275px;
+    background: linear-gradient(90deg, #0050d1 0%, #00296b 100%);
+    border-radius: 34px;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.Status_popupBottomMSG {
+    width: 80%;
+    margin: 0px auto;
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #fa7902;
+}
+
+/* Application status popup  */
+.Status__StatusTimeLineListItem {
+    display: block;
+    list-style-type: none;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: #585858;
+    margin-bottom: 0.2em;
+    height: 50px;
+}
+
+.Status__StatusTimeLineListItem::before {
+    content: '✓';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    counter-increment: step;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5%;
+    z-index: 2;
+    border: none;
+    background-color: rgb(128, 128, 128);
+    color: rgba(128, 128, 128, 0.256);
+    font-size: 10px;
+}
+
+.Status__StatusTimeLineListItem::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 1px;
+    height: 120%;
+    background-color: black;
+    z-index: -1;
+}
+
+.Status__StatusTimeLineListItem:last-child::after {
+    content: none;
+}
+
+.Status__StatusTimeLineListItem.completedStep::before {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+}
+
+.Status__StatusTimeLineListItem.Shortlisted::before {
+    content: "✓";
+    background: linear-gradient(90deg, #0050D1 0%, #00296B 100%);
+    border: none;
+    color: white;
+}
+
+
+.Status__StatusTimeLineListItemNotSelected {
+    color: rgba(223, 2, 2, 1);
+}
+
+.Status__StatusTimeLineListItem.completedStepNotSelected:before {
+    content: "✕";
+    background-color: rgba(223, 2, 2, 1);
+    border: none;
+    color: white !important;
+}
+
+.Status__StatusTimeLineListItem.completedStep::after {
+    background-color: #4caf50;
+}
+
+/* Feedback popup */
+.FeedbackPopup_Container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.214);
+}
+
+.FeedbackPopup_Box {
+    width: 420px;
+    height: 220px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.FeedbackPopup_closeButtonBox {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 18px;
+    width: 100%;
+    padding: 0.7em 0.3em 0.7em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.FeedbackPopup_closeButton {
+    font-size: 25px;
+    cursor: pointer;
+    color: #fc2c0a;
+}
+
+.FeedbackPopup_FeedbackText {
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    color: #36096D;
+}
+
+@media screen and (max-width: 1023px) {
+    .ApplicationStatus__navBar {
+        width: 95%;
+    }
+
+    .JobStatus_Card_BOX {
+        width: 90%;
+    }
+
+    .CardBox_JObTitle {
+        font-size: 1.3vw;
+    }
+
+    .CardBox_Title {
+        font-size: 1.5vw;
+    }
+
+    .CardBox_jobSalaryRange {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .CardBox_JObTitle {
+        font-size: 1.5vw;
+    }
+
+    .CardBox_Title {
+        font-size: 1.8vw;
+    }
+
+    .CardBox_jobSalaryRange {
+        font-size: 1.8vw;
+    }
+}
+
+/* ...................................... */

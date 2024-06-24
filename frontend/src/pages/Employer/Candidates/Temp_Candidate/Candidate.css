@@ -1,0 +1,425 @@
+/* .progress-ring {
+    transform: rotate(-90deg);
+}
+
+.progress-ring-circle {
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+
+.candidate-sub-main-1 {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: 120px;
+    padding-left: 10px;
+    box-shadow: 0px 1px 5px rgb(136, 135, 135);
+    border-radius: 10px;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: large;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+.candidate-sub-main-1:hover{
+    transform: translateY(-10px);
+    background-color: #dcf2ff;
+}
+.candidate-progress-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+}
+
+.candidate-main {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.candidate-main-2 {
+    width: 100%;
+}
+
+.candidate-table {
+    width: 100%;
+    /* border-bottom: 1px solid black; */
+    overflow-y: scroll;
+}
+
+.candidate-table th {
+    color: white;
+    font-weight: lighter;
+    padding: 1%;
+    text-align: left;
+}
+
+.candidate-table img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.candidate-table td {
+    padding: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.profile-bookmark-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.profile-map-div {
+    width: 30%;
+    min-height: 300px;
+    box-shadow: 0px 2px 4px rgba(138, 138, 138, 0.4);
+    margin: 12px;
+    border-radius: 10px;
+}
+.profile-name_box{
+     display: flex;
+     /* align-items: center; */
+     justify-content: space-around;
+     height: 100px;
+     padding: 10px;
+}
+.profile-map-div img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile-map-text {
+    width: 63%;
+    text-wrap: wrap;
+}
+
+.profile-map-text p {
+    text-wrap: wrap;
+    font-size: small; 
+}
+
+.profile-map-div-loc {
+    display: flex;
+    height: 50px;
+    width: 90%;
+    justify-content: space-around;
+}
+.location{
+    font-weight: bold;
+    color: rgb(0, 58, 72);
+}
+.profile-map-div-loc p {
+    color: #717171;
+}
+
+.profile-map-skills {
+    padding: 2%;
+    min-height: 150px;
+}
+
+.profile-map-skill-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.profile-map-skills h4 {
+    margin-bottom: 1%;
+}
+
+.profile-map-skills p {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    height: 40px;
+    text-align: center;
+    min-width: 65px;
+    
+    /* margin-right: 2%;
+    margin-bottom: 2%; */
+}
+
+
+
+.bookmark-profile-left-div {
+    overflow-y: scroll;
+    height: 79vh;
+    scrollbar-width: none;
+    width: 35%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.bookmark-profile-div {
+    display: flex;
+}
+
+.bookmark-profile-map-div {
+    width: 98%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    margin: 1%;
+    padding: 1%;
+    margin-bottom: 5%;
+}
+
+.bookmark-profile-right-div {
+    width: 62%;
+    padding: 3%;
+    border-radius: 24px;
+    border: 1px solid #ccc;
+}
+
+.bookmark-profile-info-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bookmark-profile-details {
+    display: flex;
+    gap: 2%;
+    margin-top: 2%;
+}
+
+.bookmark-profile-details p {
+    font-weight: 700;
+    margin-top: 2%;
+}
+
+.bookmark-profile-details span {
+    font-weight: lighter;
+    margin-bottom: 2%;
+    color: #ccc;
+}
+
+.boomark-profile-map-skills {
+    margin-top: 2%;
+}
+
+.boomark-profile-map-skills p {
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.bookmark-profile-apllication {
+    margin-top: 2%;
+}
+
+.bookmark-profile-apllication h4 {
+    margin-bottom: 2%;
+}
+
+.bookmark-profile-button {
+    display: flex;
+    margin-top: 2%;
+    gap: 20%;
+}
+
+.candidate-sub-main-2 {
+    background-color: #ffb800;
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: 120px;
+    padding-left: 10px;
+    box-shadow: 0px 1px 5px rgb(136, 135, 135);
+    border-radius: 10px;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: large;
+    color: white;
+}
+
+.table-button-div {
+    display: flex;
+    gap: 2%;
+    justify-content: flex-end;
+}
+
+.candidate-main-2 select {
+    width: auto !important;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .candidate-main-2 {
+        width: 98%;
+        margin-left: 1%;
+    }
+
+    .progress-ring-circle {
+        cx: 48;
+        r: 25;
+    }
+
+    .candidate-sub-main-1 {
+        width: 39%;
+    }
+
+    .candidate-sub-main-2 {
+        width: 39%;
+    }
+
+    .progress-ring text {
+        font-size: 18px;
+    }
+
+    .candidate-sub-main-1 p {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 2%;
+    }
+
+    .candidate-sub-main-1 h2 {
+        font-size: 20px;
+    }
+
+    .candidate-sub-main-2 p {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 2%;
+    }
+
+    .candidate-sub-main-2 h2 {
+        font-size: 20px;
+    }
+
+    .candidate-table thead {
+        font-size: 12px;
+    }
+
+    .candidate-table tbody img {
+        height: 40px;
+    }
+
+    .candidate-table tbody p {
+        font-size: 13px;
+    }
+
+    .candidate-table tbody td {
+        font-size: 13px;
+        padding: 0%;
+    }
+
+    .profile-map-div {
+        width: 80%;
+        margin: 0%;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+
+    .bookmark-profile-left-div {
+        display: none;
+    }
+
+    .bookmark-profile-right-div {
+        width: 98%;
+        margin-left: 1%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:1024px) {
+    .candidate-main-2 {
+        width: 98%;
+        margin-left: 1%;
+    }
+
+    .progress-ring-circle {
+        cx: 48;
+        r: 25;
+    }
+
+    .candidate-sub-main-1 {
+        width: 39%;
+    }
+
+    .candidate-sub-main-2 {
+        width: 39%;
+    }
+
+    .progress-ring text {
+        font-size: 18px;
+    }
+
+    .candidate-sub-main-1 p {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 2%;
+    }
+
+    .candidate-sub-main-1 h2 {
+        font-size: 20px;
+    }
+
+    .candidate-sub-main-2 p {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 2%;
+    }
+
+    .candidate-sub-main-2 h2 {
+        font-size: 20px;
+    }
+
+    .candidate-table thead {
+        font-size: 12px;
+    }
+
+    .candidate-table tbody img {
+        height: 40px;
+    }
+
+    .candidate-table tbody p {
+        font-size: 13px;
+    }
+
+    .candidate-table tbody td {
+        font-size: 13px;
+        padding: 0%;
+    }
+
+    .profile-map-div {
+        width: 40%;
+        margin: 0%;
+        margin-left: 3%;
+        margin-top: 2%;
+    }
+
+    .bookmark-profile-map-div {
+        width: 98%;
+    }
+
+    .bookmark-profile-right-div {
+        width: 57%;
+        margin-left: 0%;
+    }
+
+    .bookmark-profile-left-div{
+        width: 40%;
+    }
+}

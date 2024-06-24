@@ -1,0 +1,227 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.profile_blur_container {
+  filter: blur(5px);
+  border: 1px solid rgb(224, 224, 224);
+  width: 95%;
+  /* height: 100vh; */
+  margin: 1rem auto;
+}
+.fa_xmark {
+  display: flex;
+  justify-content: flex-end;
+}
+.fa_xmark i {
+  font-size: 25px;
+  margin-top: 1rem;
+  text-align: end;
+  cursor: pointer;
+  color: rgb(144, 143, 143);
+  padding-right: 10px;
+}
+.form_container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1rem auto;
+  font-family: Times New Roman, Equity, Tiempos, Verdigris;
+}
+.form_container input {
+  height: 45px;
+  padding-left: 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(223, 223, 223);
+  margin-bottom: 3rem;
+  color: rgb(127, 126, 126);
+  cursor: default;
+  outline: none;
+}
+
+.profile_main_container{
+   border: 1px solid rgb(231, 231, 231);
+    width: 95%;
+    margin: 0.5rem auto;
+    position: relative;
+    min-height: 100vh;
+}
+.form_container input{
+    height: 45px;
+    padding-left: 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(223, 223, 223);
+    margin-bottom: 3rem;
+    color: rgb(127, 126, 126);
+    cursor: default;
+    outline:none;
+}
+.form_container label {
+  /* font-size: small; */
+  font-weight: bold;
+}
+.name_section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.input_name_container {
+  width: 45%;
+}
+.input_name_container input {
+  width: 100%;
+}
+.input_container input {
+  width: 100%;
+}
+.email_box input {
+  width: 100%;
+}
+
+.basic_details_box {
+  display: flex;
+  width: 100%;
+  /* height: 40%; */
+  justify-content: space-between;
+}
+.left_basic_details {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.right_basic_details {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.biography_section {
+  width: 100%;
+  height: 20%;
+}
+.input_biography_container input {
+  width: 100%;
+  height: 100px;
+}
+.save_apply_btn {
+  margin: auto;
+  height: 50px;
+  width: 25%;
+  border: 1px solid white;
+  background: linear-gradient(90deg, #0088d1 0%, #00157c 100%);
+  color: white;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.start_assesment_popup_hide {
+  display: none;
+}
+.start_assesment_popup {
+  width: 20%;
+  background-color: #2f2f42;
+  color: white;
+  height: 55%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  z-index: 2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fa_xmark_2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.fa_xmark_2 i {
+  font-size: 20px;
+  text-align: end;
+  cursor: pointer;
+  color: white;
+  padding: 5px 10px 0 0;
+}
+.start_quiz_des {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.check_logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #3d5cff;
+  font-size: 3rem;
+  text-align: center;
+}
+.start_quiz_des p {
+  color: rgb(216, 214, 214);
+  font-size: small;
+}
+.start_assesment_btn {
+  background-color: rgb(24, 90, 255);
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 20%;
+  font-size: 1rem;
+  padding-top: 6%;
+  border-radius: 10px;
+}
+.Cancel_container {
+  width: 22%;
+  height: 25%;
+  border: 1px solid rgb(151, 149, 149);
+  border-radius: 10px;
+  position: absolute;
+  padding: 5px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: white;
+  box-shadow: 0px 0px 4px 1px rgb(185, 184, 184);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.CancelPopup {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.CancelPopup p {
+  color: red;
+  font-size: 0.9rem;
+}
+.btn_box {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  justify-content: space-between;
+}
+.btn_box button {
+  width: 45%;
+  border-radius: 8px;
+  height: 100%;
+  font-size: 0.9rem;
+}
+.cancelbtn1 {
+  border: 1px solid rgb(160, 159, 159);
+}
+.saveforlaterbtn2 {
+  background: linear-gradient(90deg, #0050d1 0%, #00296b 100%);
+  color: white;
+  border: 1px solid white;
+}

@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* HR-Dashboard Page------------------------------------------------------------ */
+.__dashboard_Page {
+    position: relative;
+    min-height: 100%;
+}
+
+.__dashboard_Header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Select ----------------- */
+.selectOption {
+    padding: .3em 1em;
+    border-radius: 20px;
+    outline: none;
+}
+
+.options {
+    background: transparent;
+    outline: none;
+}
+
+/* Dropdown button----------- */
+.__dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: chocolate;
+}
+
+.__dropBtn {
+    background-color: rgb(50, 76, 246);
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.__dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.__dropdown_content li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.__dropdown_content li:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.__dropdown:hover .__dropdown_content {
+    display: block;
+}
+
+.__dropdown:hover .__dropBtn {
+    background-color: #3e8e41;
+}
+
+/* Posts Impression ------------ */
+.__post_Section {
+    height: 200px;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.__posts {
+    background: white;
+    width: 90%;
+    min-height: 170px;
+    border-radius: 10px;
+    /* border: 1px solid rgba(128, 128, 128, 0.497); */
+    box-shadow: 1px 1px 5px grey;
+    cursor: pointer;
+}
+
+.activeCard {
+    background: rgba(255, 184, 0, 1);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 1px 0px;
+}
+
+.__postLogo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: .1px solid rgba(0, 0, 0, 0.3);
+    background: white;
+}
+
+.__postTitle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5em 0;
+    gap: 20px;
+    font-weight: 500;
+}
+
+.__btn_PostOpen {
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.__post_body {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0 .5em 0;
+}
+
+.__post_body span {
+    color: yellow;
+    background: green;
+    border-radius: 15px;
+    padding: 2px 20px;
+}
+
+.__post_Footer {
+    color: rgb(0, 166, 255);
+    font-size: 18px;
+}
+
+.__post_Footer span {
+    font-size: 28px;
+    padding-left: 1em;
+}
+
+/* Job details------------ */
+._jobDetails {
+    margin: .5em 0;
+    color: rgb(13, 83, 13);
+    padding: 1em 1.5em;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+._jobDetails p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* HR JOB DETAIL CSS */
+.hr_job_detail_skill_container_main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin: 1em 0;
+}
+
+.hr_job_detail_skill_container ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hr_job_detail_skill {
+    list-style-type: none;
+    border: 1px solid rgba(255, 184, 0, 1);
+    background-color: rgba(255, 184, 0, 1);
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+    padding: .2em 2em;
+    border-radius: 30px;
+    text-align: center;
+    margin: 0 .5em;
+}
+
+.hr_job_detail_location {
+    display: flex;
+    justify-content: space-between;
+}
+
+.__jobLeftSection {
+    display: flex;
+    gap: 2em;
+}
+
+.job_seeker_card {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30vw;
+    height: fit-content;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.job_seeker_card_image {
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.job_seeker_card_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.job_seeker_card_bookmark {
+    height: 4vh;
+    width: 4vw;
+}
+
+.job_seeker_card_skills_list_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.job_seeker_card_skills {
+    border: 1px solid black;
+    border-radius: 20px;
+    list-style-type: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Applicant & details--------- */
+.__appliedUserList {
+    width: 100%;
+    gap: 1em;
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+    align-items: center;
+    justify-content: center;
+}
+
+.__appliedUsers {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 100%;
+    height: 20em;
+    padding: 1em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 1em; */
+    justify-content: space-around;
+}
+
+.__appliedUsers:hover {
+    /* box-shadow: none; */
+    cursor: pointer;
+    outline: 2px solid rgba(0, 0, 0, 0.418);
+}
+
+.__userPF {
+    border: 1px solid rgba(128, 128, 128);
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.__appliedHeader {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.__bookmark {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: .2em;
+    top: 0;
+}
+
+.__appliedBody {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.__appliedSkills {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.__appliedSkills span {
+    padding: 2px 1em;
+    border-radius: 15px;
+    background: rgb(226, 226, 226);
+    font-size: 15px;
+}
+
+/* Applicant Details--------- */
+.__applicationDetails_Header {
+    border: 1px solid grey;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 0.5em 1em;
+    height: 50px;
+}
+
+.__applicationDetails_CloseButton {
+    font-size: 22px;
+    color: crimson;
+    cursor: pointer;
+}
+
+.__applicationDetailsContainer {
+    margin: 10px 0px;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.__applicantDetails__ListBox {
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.__Secondary_appliedUsers {
+    width: 95%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+}
+
+.__active_appliedUsers {
+    outline: none;
+    /* width: 348px; */
+    border: 2px solid rgba(0, 0, 255, 0.245);
+    border-radius: 15px;
+    background-color: rgba(161, 187, 255, 0.2);
+    box-shadow: rgba(48, 48, 193, 0.25) 0px 6px 12px -2px, rgba(48, 48, 193, 1) 0px 3px 7px -3px;
+}
+
+.__Secondary_appliedUsers:hover {
+    cursor: pointer;
+    outline: none;
+}
+
+.__applicantDetails_Container {
+    /* border: 1px solid; */
+    width: calc(100% - 355px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: fit-content;
+    align-self: flex-start;
+    max-height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    border-radius: 15px;
+}
+
+.__applicantDetails {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+
+}
+
+.__applicantPlace {
+    display: flex;
+    gap: 3em;
+}
+
+.__applicantButtons {
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+
+.__applicantBtn {
+    font-weight: 500;
+    background: orange;
+    color: white;
+    padding: 0.4em 2em;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+/* User Posts --------------- */
+.__user_Post {
+    border: 1px solid rgba(128, 128, 128, 0.694);
+    border-radius: 15px;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.createPost_BtnDelete {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 2em;
+    top: 2em;
+}
+
+.__user_Post_Header {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.__user_PostImg {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.__latestPosts_Img,
+.__user_Post_info {
+    border: 1px solid grey;
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    color: black;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5.4px 3.2px;
+    margin-bottom: 1em;
+}
+
+.__user_Post_info {
+    height: auto;
+    padding: 1em 3em;
+    font-weight: 500;
+}
+
+.__btn_Repost {
+    background: orange;
+    padding: .3em 1.5em;
+    color: white;
+    border-radius: 5px;
+}
+
+.__user_Post_Footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* View PDF */
+.__viewPDF_mainContainer {
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.46);
+    overflow: hidden;
+    scrollbar-width: none;
+    z-index: 10;
+}
+
+.__viewPDF_CloseButton {
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+}
+
+.__viewPDF_CloseButton:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: crimson;
+}
+
+.__viewPDFBox {
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.__viewPDF_errorMSG {
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+/* download option */
+
+.__viewPDF_downloadButton {
+    display: inline-block;
+    position:absolute;
+    right: 55px;
+    margin-top: 17px;
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .__viewPDF_downloadButton:hover {
+    background-color: #0056b3;
+  }
+  
+
+iframe:focus {
+    outline: none;
+}
+
+iframe[seamless] {
+    display: block;
+}

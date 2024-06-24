@@ -1,0 +1,130 @@
+/* Employee Page------------------------------------------------------------ */
+.__employee_ToggleNav {
+    width: 78vw;
+    height: 28vh;
+    align-items: center;
+    padding: 0px 5px;
+    display: flex;
+    overflow-y: auto;
+    scrollbar-width: none;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.__employee_Links {
+    text-decoration: none;
+    background: transparent;
+}
+
+.active {
+    border-radius: 10px;
+    text-decoration: none;
+    background: transparent;
+    background-color: #d3c0fb85;
+}
+
+.__employee_Links_Toggles {
+    border-radius: 10px;
+    width: 250px;
+    height: 140px;
+    padding: .5em 1em;
+    color: #222222;
+    transition: 300ms linear;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.__employee_Links_Toggles:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 1.5px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.__employee_Links_Toggles h1 {
+    font-size: 40px;
+}
+
+.__employee_PresenceColor {
+    width: 16px;
+    height: 16px;
+    background: greenyellow;
+    border-radius: 50%;
+}
+
+.__leaveReq_Table {
+    margin: 2em 1em;
+}
+
+.__leaveReq_Table_header {
+    min-height: 60px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 1em;
+}
+
+.__leaveReq_Table_PrimaryText {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.__leaveReq_Table_Button {
+    border: none;
+    outline: none;
+    background-color: #3354F4;
+    margin: 0;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0.5em 0.6em;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.__leaveReq_Table_ButtonICON {
+    display: block;
+    color: white;
+    font-size: 18px;
+    transform: rotate(-90deg);
+}
+
+.attachment__buttons {
+    border: none;
+    color: white;
+    padding: 0.3em 1em;
+    border-radius: 10px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.attachment__buttons:nth-child(1) {
+    background-color: #DF0202;
+    margin-right: 10px;
+}
+
+.attachment__buttons:nth-child(1):hover {
+    cursor: pointer;
+    background-color: rgb(237, 4, 4);
+}
+
+.attachment__buttons:nth-child(2) {
+    background-color: #00B707;
+}
+
+.attachment__buttons:nth-child(2):hover {
+    cursor: pointer;
+    background-color: #02ce08;
+}
+
+.attachmentButton_Icon {
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+
+.attachment__buttons:hover .attachmentButton_Icon {
+    transform: scale(1.3);
+}
